@@ -10,6 +10,12 @@ public class LocalTypeInference {
     public void whenVarInıtWithString_ThenGetStringTypeVar(){
         var message="Hello java";
         assert(message instanceof String);
+
+        // var v = null; - not allowed
+        // var v; - not allowed
+        //private var name; -- not allowed
+        // var z = (int x, int y)-> x+y; -- not allowed (cannot use as lambda)
+
     }
 
 

@@ -18,6 +18,12 @@ public class TryWithResource {
             System.out.println(br1.readLine());
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            try {
+                br.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
