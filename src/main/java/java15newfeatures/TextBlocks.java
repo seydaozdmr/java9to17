@@ -1,6 +1,10 @@
-package java13newfeatures;
+package java15newfeatures;
 
 public class TextBlocks {
+
+    /**
+     * Text blocks are available in Java 13 and 14 as a preview feature and from Java 15 as a standard feature.
+     */
     public static void main(String[] args) {
         String TEXT_BLOCK_JSON = """
             {

@@ -1,0 +1,2 @@
+In Java 15, both ZGC (JEP 377) and Shenandoah (JEP 379) will be no longer be experimental.
+Both will be supported configurations that teams can opt to use, while the G1 collector will remain the default.

@@ -1,0 +1,12 @@
+1- Enhanced Pseudo-Random Number Generators (JEP 356)
+So, it's easier to use different algorithms interchangeably, and it also offers better support for stream-based programming:
+
+2-Pattern Matching for Switch (Preview)
+This is another step toward pattern matching by enhancing pattern matching for switch expressions and statements.
+It reduces the boilerplate necessary to define those expressions and improves the expressiveness of the language.
+
+3-Vector API (Second Incubator) (JEP 414)
+The Vector API deals with the SIMD (Single Instruction, Multiple Data) type of operation, meaning various sets of instructions executed in parallel.
+It leverages specialized CPU hardware that supports vector instructions and allows the execution of such instructions as pipelines.
+Everyday use cases for this operation are scientific algebra linear applications, image processing, character processing,
+and any heavy arithmetic application or any application that needs to apply an operation for multiple independent operands.
