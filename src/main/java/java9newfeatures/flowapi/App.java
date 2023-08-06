@@ -9,7 +9,8 @@ public class App {
 
         SubmissionPublisher<Integer> publisher=new SubmissionPublisher<>();
 
-        publisher.subscribe(new MySubscriber<>());
+        publisher.subscribe(new MySubscriber<>("Abone 1"));
+        publisher.subscribe(new MySubscriber<>("Abone 2"));
 
 
         items.forEach(s->{

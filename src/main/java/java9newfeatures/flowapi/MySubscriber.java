@@ -4,7 +4,11 @@ import java.util.concurrent.Flow;
 
 public class MySubscriber<T> implements Flow.Subscriber<T> {
     private Flow.Subscription subscription;
+    private String subscriberName;
 
+    public MySubscriber(String subscriberName) {
+        this.subscriberName = subscriberName;
+    }
 
     @Override
     public void onSubscribe(Flow.Subscription subscription) {
@@ -17,7 +21,7 @@ public class MySubscriber<T> implements Flow.Subscriber<T> {
     public void onNext(T item) {
         System.out.println(item);
         try {
-            System.out.println(item+" is processing");
+            System.out.println(this.subscriberName+ " - " +item+" is processing");
             Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
