@@ -6,6 +6,9 @@ public class NewStringMethods {
     public static void main(String[] args) {
         System.out.println(" ".isBlank()); //true
 
+        String test = "";
+        System.out.println(test.isBlank());
+
         String s = "Anupam";
         System.out.println(s.isBlank()); //false
         String s1 = "";

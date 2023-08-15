@@ -24,7 +24,7 @@ public class SwitchExpressions {
 
         // Here switch is an expression, assigned to "day"
         String day = switch (dayNumber) {
-            case 3 -> "Wednesday";
+            case 3,5 -> "Wednesday";
             case 4 -> "Thursday";
             default -> throw new IllegalStateException("Invalid dayNumber: " + dayNumber);
         };

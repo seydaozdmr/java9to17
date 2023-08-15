@@ -11,6 +11,7 @@ public class LocalTypeInference {
         var message="Hello java";
         assert(message instanceof String);
 
+
         // var v = null; - not allowed
         // var v; - not allowed
         //private var name; -- not allowed

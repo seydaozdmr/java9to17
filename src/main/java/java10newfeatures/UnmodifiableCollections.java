@@ -28,5 +28,6 @@ public class UnmodifiableCollections {
                 .filter(i -> i % 2 == 0)
                 .collect(Collectors.toUnmodifiableList());
         evenList.add(4);
+        evenList.set(0,10);
     }
 }
